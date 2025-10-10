@@ -10,7 +10,7 @@ console.log({p3});
 //Desestructurar arrays con tipos estrictos
 
 const returnsArrayFn = () => {
-    return["Abc", 123] as const; //esto hace que siempre se sepa que se va a devolver un string y un numero en esas posiciones
+    return["Abc", 123] as const ; //esto hace que siempre se sepa que se va a devolver un string y un numero en esas posiciones
 }
 
 const [letters, numbers] = returnsArrayFn()
