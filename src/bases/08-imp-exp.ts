@@ -31,3 +31,14 @@ export const obtenerHeroe = (owner : Owner) => {
     return heroesPorOwner
 }
 
+
+
+
+//Ejercicio i wanted to do
+
+export const obtenerHeroePorEdad = (edad : number) => {
+    const heroePorEdad = heroes.filter((heroe) => heroe.age === edad)
+    return heroePorEdad
+}
+
+

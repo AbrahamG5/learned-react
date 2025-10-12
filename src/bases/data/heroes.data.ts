@@ -3,6 +3,7 @@ export interface Hero{
     id:number;
     name:string;
     owner:Owner;
+    age: number;
 }
 
 //type Owner = 'DC' | 'Marvel'
@@ -16,30 +17,36 @@ export const heroes:Hero[]= [
     id: 1,
     name: 'Batman',
     owner: Owner.DC,
+    age: 40
   },
   {
     id: 2,
     name: 'Spiderman',
     owner: Owner.Marvel,
+    age: 30
   },
   {
     id: 3,
     name: 'Superman',
     owner: Owner.DC,
+    age: 40
   },
   {
     id: 4,
     name: 'Flash',
     owner: Owner.DC,
+    age: 30
   },
   {
     id: 5,
     name: 'Wolverine',
     owner: Owner.Marvel,
+    age: 40
   },
   {
     id: 6,
     name: 'DeadPool',
     owner: Owner.Marvel,
+    age: 30
   },
 ];
