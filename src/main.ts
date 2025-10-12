@@ -10,7 +10,8 @@ import "./style.css";
 //import './bases/08-imp-exp'
 //import './bases/09-promises'
 //import "./bases/10-fetch-api";
-import "./bases/11-async-await";
+//import "./bases/11-async-await";
+import "./bases/12-practica-propia";
 
 //import { getHeroByOwner, obtenerHeroe } from './bases/08-imp-exp';
 //mport { obtenerHeroePorEdad } from "./bases/08-imp-exp";
