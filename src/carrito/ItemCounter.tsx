@@ -33,10 +33,19 @@ interface Props {
 }
 
 export const ItemCounter = ({ name, itemQuantity }: Props) => {
+  const handleClick = () => {
+    console.log(`Click en ${name}`);
+  };
   return (
     <section style={sectionStyle}>
       <span style={itemSpanStyle}>{name}</span>
-      <button>+1</button>
+      <button
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        +1
+      </button>
       <span style={counterSpanStyle}>{itemQuantity}</span>
       <button>-1</button>
     </section>
