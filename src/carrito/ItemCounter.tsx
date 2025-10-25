@@ -51,10 +51,8 @@ export const ItemCounter = ({ name, itemQuantity = 1 }: Props) => {
     console.log(`Click en ${name}`);
   }; */
   return (
-    <div className="flex flex-row bg-amber-500 justify-center items-center gap-10 text-center m-3 p-2 h-12 rounded-2xl">
-      <span className="bg-white font-bold min-w-20 px-2 py-0 sm:py-0.5">
-        {name}
-      </span>
+    <div className="flex flex-row bg-blue-400 justify-center items-center gap-10 text-center m-3 p-2 mb-5 h-12 rounded-2xl mask-radial-at-center shadow-xs shadow-purple-800 ">
+      <span className="bg-white/80 font-bold w-25 rounded-2xl ">{name}</span>
       <button
         /* onMouseEnter={() => {
         console.log(`Mouse enter ${name}`);
@@ -63,21 +61,21 @@ export const ItemCounter = ({ name, itemQuantity = 1 }: Props) => {
           handleClick();
         }} */
         onClick={handleAdd}
-        className="bg-linear-to-br from-white to-sky-400 border-black border-2 rounded-t-2xl px-1 font-semibold w-10 hover:bg-amber-200 hover:rounded-2xl hover:border-amber-700 hover:scale-110 transition-all duration-400  hover:from-sky-600 hover:to-sky-400 hover:text-white"
+        className="bg-linear-to-br from-white to-sky-400 border-black border-2 rounded-t-2xl px-1 font-semibold w-10 hover:bg-amber-200 hover:rounded-2xl hover:border-white hover:scale-110 transition-all duration-400  hover:from-yellow-100 hover:via-purple-200 hover:to-sky-400 hover:text-black hover:cursor-pointer"
       >
         +1
       </button>
       <span
-        className={`px-3 w-10 border-2 border-sky-600 ${
+        className={`px-3 w-10 border-2 border-sky-800 ${
           count === 1
-            ? "text-amber-100 bg-amber-600 rounded-2xl"
+            ? "text-amber-100 bg-blue-500 rounded-2xl"
             : "text-black bg-white"
         } transition-all duration-300 transform scale-105`}
       >
         {count}
       </span>
       <button
-        className="bg-linear-to-br from-white to-sky-400 border-black border-2 rounded-b-2xl px-1 font-semibold w-10 hover:bg-amber-200 hover:rounded-2xl hover:border-amber-700 hover:scale-110 transition-all duration-400  hover:from-sky-600 hover:to-sky-400 hover:text-white"
+        className="bg-linear-to-br from-white to-sky-400 border-black border-2 rounded-b-2xl px-1 font-semibold w-10 hover:bg-amber-200 hover:rounded-2xl hover:border-white hover:scale-110 transition-all duration-400  hover:from-yellow-100 hover:via-purple-200 hover:to-sky-400 hover:text-black hover:cursor-pointer"
         onClick={handleRest}
       >
         -1
