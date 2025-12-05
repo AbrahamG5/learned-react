@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > Should match snapshot 1`] = `
+<div>
+  <h1
+    data-testid="test-id-name"
+    style="background-color: red; border-radius: 10px; padding: 10px; text-align: center;"
+  >
+    Abraham!!
+  </h1>
+  <h3>
+    Garcia
+  </h3>
+  <p>
+     
+    Monster Hunter,  Minecraft,  Terraria
+     
+  </p>
+  <h1>
+     
+    Inactivo
+     
+  </h1>
+  <p>
+     
+    {"codigoPostal":"80OPO","pais":"Mexico"}
+     
+  </p>
+</div>
+`;

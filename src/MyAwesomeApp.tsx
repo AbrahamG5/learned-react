@@ -24,6 +24,7 @@ export function MyAwesomeApp() {
   return (
     <>
       <h1
+        data-testid="test-id-name"
         style={
           styleH1Nombre
           /* backgroundColor: activo ? "blue" : "red",
